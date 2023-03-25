@@ -1,5 +1,6 @@
 package com.vetrix.network_API.address;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,7 +9,9 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("/address")
+@Tag(name = "Address")
 public class AddressController {
     private final AddressService addressService;
 
