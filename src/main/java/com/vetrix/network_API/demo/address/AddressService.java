@@ -1,4 +1,4 @@
-package com.vetrix.network_API.address;
+package com.vetrix.network_API.demo.address;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

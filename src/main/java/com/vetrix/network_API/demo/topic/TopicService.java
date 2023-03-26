@@ -1,4 +1,4 @@
-package com.vetrix.network_API.topic;
+package com.vetrix.network_API.demo.topic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.vetrix.network_API.topic;
+package com.vetrix.network_API.demo.topic;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;

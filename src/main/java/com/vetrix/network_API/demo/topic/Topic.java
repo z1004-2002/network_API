@@ -1,31 +1,32 @@
-package com.vetrix.network_API.ue;
+package com.vetrix.network_API.demo.topic;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.vetrix.network_API.topic.Topic;
+
+import com.vetrix.network_API.demo.ue.Ue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.UUID;
 
 @AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "topic")
 @Entity
-@Table(name = "ue")
-public class Ue {
+public class Topic {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID",strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "id")
     private UUID id;
     private String name;
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_topic",nullable = false)
-    @JsonIgnore
-    private Topic topic;
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_topic",referencedColumnName = "id")
+    private List<Ue> ueList;
+
+    public Topic() {
+    }
 }

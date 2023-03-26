@@ -1,8 +1,8 @@
-package com.vetrix.network_API.student;
+package com.vetrix.network_API.demo.student;
 
-import com.vetrix.network_API.address.Address;
-import com.vetrix.network_API.address.AddressRepository;
-import com.vetrix.network_API.address.AddressService;
+import com.vetrix.network_API.demo.address.Address;
+import com.vetrix.network_API.demo.address.AddressRepository;
+import com.vetrix.network_API.demo.address.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

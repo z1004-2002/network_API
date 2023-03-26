@@ -1,6 +1,6 @@
-package com.vetrix.network_API.ue;
+package com.vetrix.network_API.demo.ue;
 
-import com.vetrix.network_API.topic.TopicRepository;
+import com.vetrix.network_API.demo.topic.TopicRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

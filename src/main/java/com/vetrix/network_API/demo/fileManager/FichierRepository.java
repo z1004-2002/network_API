@@ -1,4 +1,4 @@
-package com.vetrix.network_API.ue;
+package com.vetrix.network_API.demo.fileManager;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 @Repository
-public interface UeRepository extends JpaRepository<Ue, UUID> {
+public interface FichierRepository extends JpaRepository<Fichier, UUID> {
 }

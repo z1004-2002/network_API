@@ -1,7 +1,6 @@
-package com.vetrix.network_API.address;
+package com.vetrix.network_API.demo.student;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.vetrix.network_API.student.Student;
+import com.vetrix.network_API.demo.address.Address;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,17 +11,20 @@ import javax.persistence.*;
 import java.util.UUID;
 
 @Entity
-@Table(name = "address")
+@Table(name = "student")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class Address {
+public class Student {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID",strategy = "org.hibernate.id.UUIDGenerator")
-    @Column(name = "address_id")
+    @Column(name = "id")
     private UUID id;
-    private String city;
-    private String state;
+    private String Name;
+    private String department;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id",referencedColumnName = "address_id",nullable = false)
+    private Address address;
 }
