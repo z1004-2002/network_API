@@ -11,7 +11,7 @@ import java.util.UUID;
 @CrossOrigin("*")
 @RequestMapping("/student")
 @RestController
-@Tag(name = "Student")
+@Tag(name = "Test Student")
 public class StudentController {
     final StudentService studentService;
 

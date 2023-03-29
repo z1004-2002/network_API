@@ -11,10 +11,9 @@ import java.util.UUID;
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/ue")
-@Tag(name = "Ue")
+@Tag(name = "Test Ue")
 public class UeController {
     private final UeService ueService;
-
     @Autowired
     public UeController(UeService ueService) {
         this.ueService = ueService;

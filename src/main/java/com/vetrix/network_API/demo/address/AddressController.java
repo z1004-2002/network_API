@@ -11,7 +11,7 @@ import java.util.UUID;
 @RestController
 @CrossOrigin("*")
 @RequestMapping("/address")
-@Tag(name = "Address")
+@Tag(name = "Test Address")
 public class AddressController {
     private final AddressService addressService;
 

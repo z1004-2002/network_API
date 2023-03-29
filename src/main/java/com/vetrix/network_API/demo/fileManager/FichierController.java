@@ -10,12 +10,11 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
-import java.util.Random;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/file")
-@Tag(name = "File Manager")
+@RequestMapping("/fichier")
+@Tag(name = "Test File Manager")
 @CrossOrigin("*")
 public class FichierController {
     @Autowired
@@ -35,7 +34,6 @@ public class FichierController {
             sb.append(AlphaNumericString
                     .charAt(index));
         }
-
 
         fichierEntite.setNom(file.getOriginalFilename()+"/"+sb);
         fichierEntite.setType(file.getContentType());

@@ -9,7 +9,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@Tag(name = "Topic")
+@Tag(name = "Test Topic")
 @RequestMapping("/topic")
 @CrossOrigin("*")
 public class TopicController {
